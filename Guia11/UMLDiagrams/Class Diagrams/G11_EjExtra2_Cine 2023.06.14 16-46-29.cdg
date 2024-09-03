@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G11_EjExtra2_Cine">
+  <ClassDiagramComponents>
+    <Class name="App" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Asiento" package="G11_EjExtra2_Cine.entities" visibility="public" xPosition="278.0" yPosition="8.0">
+      <Fields>
+        <Field name="asiento" type="String" visibility="private"/>
+        <Field name="espectador" type="Espectador" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="asiento"/>
+          <Argument type="Espectador" name="espectador"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAsiento" returnType="String" visibility="public"/>
+        <Method name="setAsiento" returnType="void" visibility="public">
+          <Argument type="String" name="asiento"/>
+        </Method>
+        <Method name="getEspectador" returnType="Espectador" visibility="public"/>
+        <Method name="setEspectador" returnType="void" visibility="public">
+          <Argument type="Espectador" name="espectador"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cine" package="G11_EjExtra2_Cine.entities" visibility="public" xPosition="694.0" yPosition="455.0">
+      <Fields>
+        <Field name="pelicula" type="Pelicula" visibility="private"/>
+        <Field name="sala" type="Asiento[][]" visibility="private"/>
+        <Field name="precioEntrada" type="Float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Pelicula" name="pelicula"/>
+          <Argument type="Asiento[][]" name="sala"/>
+          <Argument type="Float" name="precioEntrada"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPelicula" returnType="Pelicula" visibility="public"/>
+        <Method name="setPelicula" returnType="void" visibility="public">
+          <Argument type="Pelicula" name="pelicula"/>
+        </Method>
+        <Method name="getSala" returnType="Asiento[][]" visibility="public"/>
+        <Method name="setSala" returnType="void" visibility="public">
+          <Argument type="Asiento[][]" name="sala"/>
+        </Method>
+        <Method name="getAsientosDisp" returnType="int" visibility="public"/>
+        <Method name="getAsientosOcup" returnType="int" visibility="public"/>
+        <Method name="getPrecioEntrada" returnType="Float" visibility="public"/>
+        <Method name="setPrecioEntrada" returnType="void" visibility="public">
+          <Argument type="Float" name="precioEntrada"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Espectador" package="G11_EjExtra2_Cine.entities" visibility="public" xPosition="681.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+        <Field name="dinero" type="Float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Integer" name="edad"/>
+          <Argument type="Float" name="dinero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getEdad" returnType="Integer" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="Integer" name="edad"/>
+        </Method>
+        <Method name="getDinero" returnType="Float" visibility="public"/>
+        <Method name="setDinero" returnType="void" visibility="public">
+          <Argument type="Float" name="dinero"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pelicula" package="G11_EjExtra2_Cine.entities" visibility="public" xPosition="250.0" yPosition="445.0">
+      <Fields>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="duracionMinutos" type="Integer" visibility="private"/>
+        <Field name="edadMin" type="Integer" visibility="private"/>
+        <Field name="director" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="titulo"/>
+          <Argument type="int" name="duracion"/>
+          <Argument type="int" name="edadMin"/>
+          <Argument type="String" name="director"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getDuracion" returnType="Integer" visibility="public"/>
+        <Method name="setDuracion" returnType="void" visibility="public">
+          <Argument type="int" name="duracion"/>
+        </Method>
+        <Method name="getEdadMin" returnType="Integer" visibility="public"/>
+        <Method name="setEdadMin" returnType="void" visibility="public">
+          <Argument type="Integer" name="edadMin"/>
+        </Method>
+        <Method name="getDirector" returnType="String" visibility="public"/>
+        <Method name="setDirector" returnType="void" visibility="public">
+          <Argument type="String" name="director"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ennumeracion" package="G11_EjExtra2_Cine.enums" visibility="public" xPosition="37.0" yPosition="248.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="CineService" package="G11_EjExtra2_Cine.services" visibility="public" xPosition="1204.0" yPosition="487.0">
+      <Fields>
+        <Field name="read" type="Scanner" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="abrirCine" returnType="Cine" visibility="public"/>
+        <Method name="mostrarSala" returnType="void" visibility="public">
+          <Argument type="Cine" name="c"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EspectadorService" package="G11_EjExtra2_Cine.services" visibility="public" xPosition="1165.0" yPosition="165.0">
+      <Fields>
+        <Field name="read" type="Scanner" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearEspectador" returnType="Espectador" visibility="public"/>
+        <Method name="crearEspectadorAuto" returnType="Espectador" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PeliculaService" package="G11_EjExtra2_Cine.services" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="read" type="Scanner" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearPelicula" returnType="Pelicula" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="G11_EjExtra2_Cine.services.EspectadorService" target="G11_EjExtra2_Cine.entities.Espectador" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="G11_EjExtra2_Cine.services.CineService" target="G11_EjExtra2_Cine.entities.Cine" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="G11_EjExtra2_Cine.entities.Cine" target="G11_EjExtra2_Cine.entities.Asiento" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="G11_EjExtra2_Cine.entities.Asiento" target="G11_EjExtra2_Cine.entities.Espectador" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pelicula" source="G11_EjExtra2_Cine.entities.Cine" target="G11_EjExtra2_Cine.entities.Pelicula" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="G11_EjExtra2_Cine.services.PeliculaService" target="G11_EjExtra2_Cine.entities.Pelicula" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="espectador" source="G11_EjExtra2_Cine.entities.Asiento" target="G11_EjExtra2_Cine.entities.Espectador" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="G11_EjExtra2_Cine.entities.Cine" target="G11_EjExtra2_Cine.entities.Pelicula" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
